@@ -729,7 +729,7 @@ function AppShowcaseSection() {
               <AnimatePresence mode="wait" initial={false}>
                 <motion.img
                   key={activeScreen.image}
-                  src={activeScreen.image}
+                  src={`${import.meta.env.BASE_URL}${activeScreen.image.replace(/^\/+/, "")}`}
                   alt=""
                   loading="lazy"
                   decoding="async"
