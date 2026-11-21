@@ -1,3 +1,4 @@
+import GlassCube from "./components/GlassCube";
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import {
   AnimatePresence,
@@ -444,6 +445,7 @@ function HeroSection() {
       <div className="hero-scrim" aria-hidden="true" />
       <div className="hero-orbit hero-orbit--one" aria-hidden="true" />
       <div className="hero-orbit hero-orbit--two" aria-hidden="true" />
+      <GlassCube />
       <div className="container hero-container">
         <motion.div
           className="hero-copy"
