@@ -435,7 +435,11 @@ function HeroSection() {
   return (
     <section className="hero-section" id="home" ref={heroRef}>
       <motion.div className="hero-photo" style={heroMotion} aria-hidden="true">
-        <img src="/images/creators.webp" alt="" fetchPriority="high" />
+        <img   
+          src={`${import.meta.env.BASE_URL}images/creators.webp`} 
+          alt=""   
+          fetchPriority="high" 
+          />
       </motion.div>
       <div className="hero-scrim" aria-hidden="true" />
       <div className="hero-orbit hero-orbit--one" aria-hidden="true" />
