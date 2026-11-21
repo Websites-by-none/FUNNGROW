@@ -299,14 +299,26 @@ function Reveal({ children, className = "", delay = 0 }: { children: ReactNode; 
   );
 }
 
+
 function BrandLockup({ hero = false }: { hero?: boolean }) {
   return (
-    <a className={`brand-lockup${hero ? " brand-lockup--hero" : ""}`} href="#home" aria-label="FUNNGROW home">
-      <img src="/images/funngro-icon.png" width="42" height="42" alt="" aria-hidden="true" />
+    <a
+      className={`brand-lockup${hero ? " brand-lockup--hero" : ""}`}
+      href="#home"
+      aria-label="FUNNGROW home"
+    >
+      <img
+        src={`${import.meta.env.BASE_URL}images/funngro-icon.png`}
+        width="42"
+        height="42"
+        alt=""
+        aria-hidden="true"
+      />
       <span>FUNNGROW</span>
     </a>
   );
 }
+
 
 function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
